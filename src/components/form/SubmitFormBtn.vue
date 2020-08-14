@@ -29,7 +29,6 @@ export default {
           { cityNameInput: this.cityNameInput, numOfDays: this.numOfDays }
         )
         if (result === 'success') {
-          this.$store.commit('setCurrentCity', this.cityNameInput)
           this.$store.dispatch('backgroundJobs/setForecastRefreshTimeout')
         }
 
