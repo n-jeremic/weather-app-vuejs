@@ -42,7 +42,6 @@ export default {
         
         dispatch('handleFetchingSuccess',
           { forecastData,
-            cityNameInput: inputPayload.cityNameInput,
             numOfDays: inputPayload.numOfDays
           }
         )
@@ -72,7 +71,7 @@ export default {
     handleFetchingSuccess({ commit, getters }, payload) {
       if (getters.fetchingError.error) commit('removeFetchingError')
       commit('setForecastData', payload.forecastData)
-      commit('setCurrentCity', payload.cityNameInput, { root: true })
+      commit('setCurrentCity', payload.forecastData.city, { root: true })
       commit('setSelectedNumOfDays', payload.numOfDays, { root: true })
     },
     handleFetchingError({ commit, dispatch, rootGetters }, error) {
