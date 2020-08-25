@@ -1,5 +1,5 @@
 <template>
-  <div class="card mt-4 weather-info-card">
+  <div class="card mt-4 weather-info-card forecast-table">
     <h5 class="card-header weather-info-card-header">{{ tableTitle }}</h5>
     <div class="card-body">
       <table class="table table-bordered table-hover">

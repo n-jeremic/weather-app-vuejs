@@ -1,5 +1,5 @@
 <template>
-  <div class="card shadow-sm mt-4">
+  <div class="card shadow-sm mt-4 forecast-card">
     <div class="card-body">
       <h3 class="card-title">
         {{ forecastDataObj.city }}

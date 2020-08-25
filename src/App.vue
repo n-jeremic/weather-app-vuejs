@@ -9,7 +9,7 @@
           </h3>
           <div class="card-body">
             <app-form/>
-            <div v-if="!loadingForecastData">
+            <div class="data-container" v-if="!loadingForecastData">
               <app-forecast-card v-if="forecastData" :forecastDataObj="forecastData"/>
               <app-fetch-error-message v-if="errorMessage" :errorMsg="errorMessage"/>
             </div>
@@ -32,7 +32,7 @@ export default {
     appForecastCard: ForecastCard,
     appFetchErrorMessage: FetchErrorMessage
   },
-  data() {
+  data() { 
     return {
       loadingForecastData: false
     }

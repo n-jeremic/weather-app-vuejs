@@ -1,10 +1,10 @@
 <template>
   <div class="card weather-info-card mt-4">
     <h5 class="card-header weather-info-card-header">
-      <img :src="generateIconUrl(currentWeatherData.weather[0].icon)">
-      <span class="align-middle">{{ currentWeatherData.weather[0].main }}</span>
+      <img :src="generateIconUrl(currentWeatherData.weather[0].icon)" id="currWeatherIcon">
+      <span class="align-middle" id="currWeatherDescription">{{ currentWeatherData.weather[0].main }}</span>
       <span class="ml-2 text-muted align-middle">( Weather Today )</span>
-      <button class="btn btn-secondary btn-sm" disabled>{{ currentDay }}</button>
+      <button class="btn btn-secondary btn-sm" id="currentDayOutput" disabled>{{ currentDay }}</button>
     </h5>
     <div class="card-body">
       <div class="row">

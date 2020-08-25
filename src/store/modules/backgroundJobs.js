@@ -2,7 +2,7 @@ export default {
   namespaced: true,
   state: () => ({
     timeoutId: null,
-    timeoutPeriod: 60000
+    timeoutPeriod: 600000
   }),
   getters: {
     timeoutId(state) {

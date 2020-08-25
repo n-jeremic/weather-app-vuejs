@@ -28,7 +28,11 @@ export default {
   },
   methods: {
     capitalize(string) {
-      return string[0].toUpperCase() + string.slice(1)
+      if (string) {
+        return string[0].toUpperCase() + string.slice(1)
+      } else {
+        return string
+      }
     },
     emitChangeEvent(event) {
       const value = event.target.value

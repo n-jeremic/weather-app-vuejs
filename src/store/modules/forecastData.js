@@ -39,7 +39,7 @@ export default {
         const forecastResponse = await dispatch('fetchCompleteWeatherData', coordinatesObj)
         const forecastData = forecastResponse.data
         forecastData.city = currentWeatherResponse.data.name
-        
+
         dispatch('handleFetchingSuccess',
           { forecastData,
             numOfDays: inputPayload.numOfDays

@@ -7,7 +7,7 @@
       <app-num-of-days-input-field v-model="numOfDaysInput"/>
     </div>
     <div class="col-xl-3 col-lg-8 col-sm-12">
-      <app-favourites-dropdown @favouriteCitySelected="cityInput = $event" />
+      <app-favourites-dropdown @favouriteCitySelected="cityInput = $event" ref="favouritesDropdown" />
     </div>
     <div class="col-xl-3 col-lg-4 col-sm-12">
       <app-submit-form-btn

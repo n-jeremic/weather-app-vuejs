@@ -1,6 +1,6 @@
 <template>
   <div class="mt-4">
-    <h4 class="text-center text-muted">{{ errorMsg }}</h4>
+    <h4 class="text-center text-muted error-message">{{ errorMsg }}</h4>
   </div>
 </template>
 
